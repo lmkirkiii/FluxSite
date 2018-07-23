@@ -1,7 +1,7 @@
 const express = require('express')
 const router = express.Router()
-const appIndexController = require("../controllers/app")
+const appIndexController = require("../controllers/app.js")
 
-router.get('/' appIndexController.action);
+router.get('/' appIndexController.index);
 
 module.exports = router;
