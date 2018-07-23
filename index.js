@@ -9,5 +9,6 @@ const methodOverride = require("method-override");
 
 const app = express();
 
-app.use(require("./routes/index.js"));
+// app.use(require("./routes/index.js"));
 
+app.listen(7000, () => console.log("server is running"));
