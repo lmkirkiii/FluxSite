@@ -1,6 +1,13 @@
 const express = require("express");
-const app = express()
+const hbs = require("hbs");
+const flash = require("connect-flash");
+const cookieParser = require("cookie-parser");
+const bodyParser = require("body-parser");
+const session = require("express-session");
+const passport = require("passport");
+const methodOverride = require("method-override");
 
-app.listen(4000, function(){
-    console.log("app 4000")
-})
+const app = express();
+
+app.use(require("./routes/index.js"));
+
